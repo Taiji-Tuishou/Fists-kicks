@@ -1,20 +1,504 @@
 <!DOCTYPE html>
-<html lang="en">
-    <style>
-      body {
-        background-color: #96c8ff;
-      }
-    </style>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Redirecting…</title>
+    <title>崩捶篇</title>
+    <style>
+        /* Make table full width and responsive */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-  <!-- Redirect after 1 seconds -->
-  <meta http-equiv="refresh" content="1; ../../Others/Pendulum.html">
+        th, td {
+            border: 0px solid #ddd;
+            padding: 8px;
+            vertical-align: top;
+        }
+        tr.child {
+        display: none;           /* hidden by default */
+        background: none;
+        }
+        body {
+            background-color: #f0f0f0;
+            background-image: url('Bg_Fists-kicks2.jpg');
+            background-position: top left; /* Start the tiling from top left */
+            background-size: 200% 100%; /* Keeps the original size of the small image */
+        }
+        /* Responsive video wrapper */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        /* Responsive text alignment on small screens */
+        @media (max-width: 600px) {
+            th, td {
+                display: block;
+                width: 100%;
+            }
+
+            table, tbody, tr {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
+<script>
+  function toggleRow(row) {
+    const indicator = row.querySelector('.indicator');
+    const next = row.nextElementSibling;
+
+    if (!next || !next.classList.contains('child')) return;
+
+    const isHidden = next.style.display === '' || next.style.display === 'none';
+    next.style.display = isHidden ? 'table-row' : 'none';
+    indicator.textContent = isHidden ? '−' : '+';
+  }
+</script>
+
 <body>
-  <center><br><br>
-  <p><h1>抱歉，網頁正在建設中！</h1><br>返回 <a href="javascript:history.back()">點這裡</a>。</p>
-  </center>
+    <table width=100% style="font-size:36px;">
+        <tbody>
+			<tr>
+                <td colspan="4" style="text-align: center;">
+					<h1>《崩捶篇》</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <p>
+                        筆者與同學們練習主要是三種拳法的應用，先後有：
+                    </p>
+                    <ol style="list-style-type:decimal;">
+                        <li data-list-item-id="e9aac09d04b508b6d214fb0729cc7d98a">
+                            插捶
+                        </li>
+                        <li data-list-item-id="e700680a97614757854eff9300f6a7a6e">
+                            拳擊[Boxing] - 現在講解的
+                        </li>
+                        <li data-list-item-id="eaa112f7c218c10f29c5010760ddd0273">
+                            崩捶[Back &nbsp;Fist]
+                        </li>
+                    </ol>
+                    <p>
+                        其實，四十多年前，約1978年間，筆者在尖沙咀青年會中心的健身房認識了一位來自美國的退伍軍人也正在練習，當時成哥，我與他閒談中得悉他練習過戰地武術，尤合軍練及東方武術，英文叫「Street Fighting」，當時中文翻譯為「搏殺術」，他們叫崩捶做「Defending Punch」，意思是既可防禦又可同時攻擊敵人，而崩捶與掛捶不同，前者以踭底力帶動腰馬，而後者膊，手帶動，而崩捶的快速攻擊的速度不下於Jab刺拳，甚至個別練習者其速度比 Jab 更快，不過在快之時能發揮攻擊敵人的勁度。<br>
+                        本篇崩捶的打法主要是参考北螳螂拳，略有参考我國的鷹爪拳，北勝蔡李佛，洪拳，詠春，及了解截拳道。
+                    </p>
+                    <p>
+                        注要：初練者不宜太多練習，担心接駁肘關節附近的肌肉靭帶受傷，宜練習前做有关舒筋運動。
+                    </p>
+                    <p>
+                        步法：在插捶篇已基本講述
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    &lt;&lt;打法&gt;&gt;
+                </td>
+            </tr>
+    <!-- Row 1 -->
+    <tr class="parent" onclick="toggleRow(this)">
+      <td class="indicator" width=25px>+</td>
+      <td width=75px>&lt;A&gt;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr class="child">
+             <td colspan="4">
+				<table width=100%>
+					<tr>
+						<td width=60px>A1.</td>
+                        <td>
+							後護手，前[橫]崩
+						</td>
+                    </tr>
+                    <tr>
+                        <td>A2.</td>
+                        <td>
+                            前抬高向下扲[伏]手，後[直]崩，後膝略屈曲
+                        </td>
+					</tr>
+                    <tr>
+                        <td>A3.</td>
+							<td>
+								右搒手，左扲 / 擸手，崩捶
+							</td>
+					</tr>
+                    <tr>
+                        <td>A4.</td>
+                        <td>
+                            左伏 / 拍 / 外擋，略轉身右搒手，順勢右崩捶
+                        </td>
+					</tr>
+				</table>
+            </td>
+		</tr>
+    <!-- Row 2 -->
+    <tr class="parent" onclick="toggleRow(this)">
+		<td class="indicator" width=25px>+</td>
+		<td>&lt;B&gt;</td>
+		<td colspan="2">超過一個攻擊敵人</td>
+	</tr>
+    <tr class="child">
+        <td colspan="4">
+            <table width=100%>
+				<tr>
+					<td width=60px>B1.</td>
+                    <td>Jab，前橫崩</td>
+                </tr>
+                <tr>
+                    <td>B2.</td>
+                    <td>Jab，向前逼步，扲[伏]手後直崩[略曲後腳]</td>
+				</tr>
+                <tr>
+					<td>B3.</td>
+                    <td>Jab[左]，左手收手在右邊頭部外[曲肘]，右後直拳，再左崩捶</td>
+                </tr>
+                <tr>
+                    <td>B4.</td>
+                    <td>大勾 / 細勾後轉崩
+						<ol>
+							<li>前手定步</li>
+							<li>前手移後腳內轉</li>
+							<li>前護手後橫勾再崩</li>
+						</ol>
+                    </td>
+                </tr>
+				<tr>
+					<td>B5.</td>
+                    <td>側前上崩，側前下崩，後護手隨機應变</td>
+                </tr>
+                <tr>
+                    <td>B6.</td>
+                    <td>側前下崩，側前上崩，後護手隨機應变</td>
+				</tr>
+                <tr>
+                    <td>B7.</td>
+                    <td>前拍 / 扲 / 護被敵人來手攻擊，左手上崩捶，再右下崩插</td>
+                </tr>
+                <tr>
+					<td>B8.</td>
+                    <td>前崩，摟手 / 拉手 蓄勁
+						<ol>
+							<li>後中正直捶</li>
+							<li>再連環直拳</li>
+						</ol>
+					</td>
+                </tr>
+                    <tr>
+                        <td>B9.</td>
+                        <td>前崩，摟手，後中正直崩</td>
+				</tr>
+                <tr>
+					<td>B10.</td>
+                    <td>後扲 / 伏手阻敵攻擊，崩捶，左穿 / 擸手，右勾拳</td>
+                </tr>
+                <tr>
+					<td>B11.</td>
+                    <td>10後改為勾手 [五指拼攏插眼 / 太陽穴]</td>
+                </tr>
+                <tr>
+                    <td>B12.</td>
+                    <td>前扲/伏手，護被敵攻擊，後直崩
+						<ol>
+							<li>轉移右步再右前崩</li>
+							<li>後崩後改為擸手將敵手下拉，再以前崩捶</li>
+						</ol>
+                    </td>
+                </tr>
+                    <td>B13.</td>
+                    <td>参考太極肘底看捶，後搬手 / 拳，前崩，後窩肚捶</td>
+                </tr>
+                <tr>
+                    <td>B14.</td>
+                    <td>前橫崩
+						<ol>
+							<li>後撞拳，再右勾</li>
+							<li>後手按 / 疾 / 伏敵來拳，前手橫崩，繼左手日字衝捶[壓着敵人橋手的同時]攻擊敵人心房 / 肝，再右勾拳攻敵頭部</li>
+						</ol>
+                    </td>
+				</tr>
+                <tr>
+                    <td>B15.</td>
+                    <td>参考插捶篇6，先前锋手插捶，後手扲/按住敵人捉我的前手，再前崩捶</td>
+				</tr>
+                    <td>B16.</td>
+                    <td>先後撞拳，再 B15，但插捶是較低攻擊</td>
+				</tr>
+				<tr>
+                    <td colspan="2"> [鞭捶打法]</td>
+				</tr>
+				<tr>
+                    <td>B17.</td>
+                    <td>（鞭捶打法一）<br>左、右、左直拳，右後脚踭向後轉變成兩腳同一水平，施展右鞭捶180度，再左鞭捶180度 [移前半前步]</td>
+				</tr>
+				<tr>
+                    <td>B18.</td>
+                    <td>（鞭捶打法二）<br>左、右直拳，左勾，右脚踭向後弧形180度，同時右鞭捶360度，[移前一步]</td>
+				</tr>
+				<tr>
+                    <td>B19.</td>
+                    <td>（鞭捶打法三）<br>左企椿，左手拍，橫推，左腳急向左轉後，變成右手右脚以急轉鞭捶攻擊敵人[後退攻擊，出奇制勝，常有此法擊倒敵人]</td>
+				</tr>
+			</table>
+        </td>
+    </tr>
+    <!-- Row 3 -->
+    <tr class="parent" onclick="toggleRow(this)">
+		<td class="indicator" width=25px>+</td>
+		<td>&lt;C&gt;</td>
+		<td colspan="2">崩捶加摔法</td>
+	</tr>
+    <tr class="child">
+        <td colspan="4">
+            <table width=100%>
+                <tr>
+                    <td colspan="2">*因有崩捶關連的例如腿擊，鎖技都會有混合情況，因此，只會以優先编寫，而重覆在<D>腿擊或<E>破腿擊時，則只以編號列出，另也盡量用北螳螂拳的名詞[若我記得的話]，而有出於截拳道我又不知如何命名，只能描述打法而矣！</td>
+                </tr>
+				<tr>
+					<td width=60px>C1.</td>
+                    <td>耕手，右前手搒貼敵人來腿攻擊，左後手下捲擸敵攻擊的脚，右崩捶，右扁踩，無論攻擊到敵人單脚站立與否。向右踏，身右 / 前壓至敵倒地…</td>
+                </tr>
+                <tr>
+                    <td>C2.</td>
+                    <td>C1攘面腿擊敵站立的脚脚脛 [上 / 下5寸]，右手搭敵頭 / 頸，拉直至敵倒地…</td>
+				</tr>
+                <tr>
+					<td>C3.</td>
+                    <td>似C1，但左手是轉下托住敵攻擊你的脚，右崩捶擊敵時，左手用力托高敵脚直至對方倒下…</td>
+                </tr>
+                <tr>
+                    <td>C4.</td>
+                    <td>右前崩，被敵右手擋隔，右手順勢微曲肘斜下拉，移步前腳跟貼敵脚跟同時以略轉腰左崩捶擊敵頭部，無論敵人是否擋隔你的左手與否，你順勢將右手向敵胸橫掃，加上你右腳移前控制敵人右脚，使他被逼倒下</td>
+				</tr>
+                <tr>
+                    <td>C5.</td>
+                    <td>我以右手索到敵人以右手攻擊我，將其手反至右肘向天，並以 [入環左叠肘] 壓力着敵人右肘時，我的右腳在敵人右腳前面，我順勢將我左腳剷後，使敵右腳扑下，而我左肘右手仍控制敵人的右手，對方必然甩肘關節…</td>
+				</tr>
+                <tr>
+					<td>C6.</td>
+                    <td>與C5不同是我左腳在敵人右脚後，並以左膝控敵人右膝，對方右曲時我順勢左崩捶攻擊敵人頭部再順勢拉他右膊，加上左揪腿與否，敵必倒地…</td>
+                </tr>
+                <tr>
+                    <td>C7.</td>
+                    <td>[撤步左/右躲剛] 敵以右直拳攻擊我中，上路，我則以移右脚至斜後方同時右橫崩擋開攻擊，並以左崩攻擊敵人，無論是穿過敵人橋手與否，我左腳以七星步勾腳移向左前方使敵人跌倒…
+					<br>若敵人仍未跌倒，我則以左勾腳移略向近右腳，同時手前推倒敵人…</td>
+				</tr>
+                <tr>
+                    <td>C8.</td>
+                    <td>敵人左方向我，我以右崩捶攻敵人頭部，[但注意的是，敵人左手抬高至頸膊胸水平，那麼我左手以攤 / 扲 / 疾 / 伏先控對方的前鋒手]，無論對方是否能擋隔我的右手，我右拳順勢化為手拉敵胸 / 膊，而右脚以揪腿掃低對方…</td>
+				</tr>
+                <tr>
+					<td>C9.</td>
+                    <td>右摏，右前崩捶攻敵頭部被擋隔，左手穿上高於我右手以控敵人截我右手，同時右手斜下以劈/割之勢打向敵人膝窩/小腿間，同時下蹲身體似以入環步配合，而我步已移貼或略過敵人前脚後面，再將斜上身，橫手向敵人身體，一蹬致令敵人被摔倒。</td>
+                </tr>
+			</table>
+        </td>
+    </tr>
+    <!-- Row 4 -->
+    <tr class="parent" onclick="toggleRow(this)">
+		<td class="indicator" width=25px>+</td>
+		<td>&lt;D&gt;</td>
+		<td colspan="2">破被腿攻擊法</td>
+	</tr>
+    <tr class="child">
+        <td colspan="4">
+            <table width=100%>
+				<tr>
+					<td width=60px>D1.<BR>D2.<BR>D3.</td>
+                    <td>與 C1. C2. C3. 相同</td>
+                </tr>
+                <tr>
+                    <td>D4.</td>
+                    <td>與A3相同，卸擋掃腿，若擋橫踩，直撑，將身略移後 [被向我内攻擊]</td>
+				</tr>
+                <tr>
+                    <td>D5.</td>
+                    <td>被側/外攻擊，刁手卸開來脚，步移前崩捶 [前臂聚力]</td>
+				</tr>
+                <tr>
+					<td>D6.</td>
+                    <td>似D5,刁手將敵腿刁向身外,其下蹚露,以彈腿攻其下陰，再前崩捶攻擊其頭部</td>
+                </tr>
+                <tr>
+                    <td>D7.</td>
+                    <td>[呑塌左 / 右低牽，登山左 / 右崩捶] 敵人脚攻擊我腹部或下陰，我以右弓左箭步轉為左弓右箭步的同時以右前臂多手牽過我腹及下陰防禦，而左手護胸 / 頸 / 腭部，當隔開來腿時，我轉回右弓左箭步，並以右崩捶攻敵人頭部</td>
+				</tr>
+                <tr>
+                    <td>D8.</td>
+                    <td>與D7前段相同，但右手可控制到敵來腿時 [可化刁手]，並以垂手崩捶 / 手攻擊敵人下陰</td>
+				</tr>
+                <tr>
+					<td>D9.</td>
+                    <td>上步攘面腿控對方起脚，並以崩捶攻擊敵頭部</td>
+                </tr>
+                <tr>
+					<td>D10.</td>
+                    <td>先以前脚扁踩攻擊敵人疑起脚的前鋒脚，再以前手橫崩捶打擊敵人頭部</td>
+                </tr>
+			</table>
+        </td>
+    </tr>
+    <!-- Row 5 -->
+    <tr class="parent" onclick="toggleRow(this)">
+		<td class="indicator" width=25px>+</td>
+		<td>&lt;E&gt;</td>
+		<td colspan="2">加鎖技法</td>
+	</tr>
+    <tr class="child">
+        <td colspan="4">
+            <table width=100%>
+				<tr>
+					<td  colspan="2">本篇不再提用指 / 腕 / 脚等鎖技</td>
+                </tr>
+				<tr>
+					<td width=60px>E1.</td>
+                    <td>C5 [入環左叠肘] 由上壓下敵人肘，而前脚在前</td>
+                </tr>
+                <tr>
+                    <td>E2.</td>
+                    <td>C6 [入環左叠肘] 但前脚在後，也是下壓敵肘</td>
+				</tr>
+                <tr>
+					<td>E3.</td>
+                    <td>右前崩捶，轉刁手擸敵人右手近手腕，拉正其肘窩向天，以拗步左抽踭，做成上托壓敵肘</td>
+                </tr>
+                <tr>
+                    <td>E4.</td>
+                    <td>E3再順勢左手按貼敵人右手肘附近防被其出踭，我右手弧形向敵人的頭部扣頸的同時左步橫行做成我左腳在敵左腳後面，而右手踏着我提起的左手橋手間，而我左手務求按着敵人頭後面，兩者我右手向我身拉近，而我在手則向前推，直至断頸<br>
+					若E3，而敵人右手下曲肘抵消我的肘托，我左手在上托的同時順勢跟移步近貼敵身衝踭下敵人腹側，若對方的肘弯下太低時，我則拍肘攻擊敵人腹的後面</td>
+				</tr>
+                <tr>
+                    <td>E5.</td>
+                    <td>敵与我對立，以右前步右前鋒手直拳攻我，我以左護手撞隔右崩捶攻敵右邊頭部，再以擸頸向下拉而右橫膝打敵人腹部，使其彎身，敵手兼顧我膝，我將右手扲低敵人頸，再扣以右橋手扣其頸，而右手搭着左手橋手，向我身拉近，而左手向前推，這招也有叫「斷頭台式前頸鎖」
+若對方用力糾纏，我可將其中一隻脚向後伸踏，做成拖低敵人，容易做頸鎖</td>
+				</tr>
+                <tr>
+					<td>E6.</td>
+                    <td>[膊頭鎖] 當我崩捶攻擊或defence防禦，阻擋來拳時，化為刁手擸緊敵人橋手，有定位，順勢斜上右脚，敵的右手膊頭被鎖扭近90度以上，我再左斜步部後移，敵人膊頭受扭曲至270度以上，當場膊頭受傷</td>
+                </tr>
+			</table>
+        </td>
+    </tr>
+    <!-- Row 6 -->
+    <tr class="parent" onclick="toggleRow(this)">
+		<td class="indicator" width=25px>+</td>
+		<td>&lt;F&gt;</td>
+		<td colspan="2">崩捶加腿擊</td>
+	</tr>
+    <tr class="child">
+        <td colspan="4">
+            <table width=100%>
+				<tr>
+					<td width=60px>F1.</td>
+                    <td>前崩捶加前橫踩腿</td>
+                </tr>
+                <tr>
+                    <td>F2.</td>
+                    <td>前崩捶,左後脚踏 / 移前，前手斜殺落，右低掃腿　[鞭捶]</td>
+				</tr>
+				<tr>
+					<td  colspan="2">[鞭捶]</td>
+                </tr>
+                <tr>
+					<td>F3.</td>
+                    <td>右椿右鞭捶，右彈腿.連環逼步3橫踩</td>
+                </tr>
+                <tr>
+                    <td>F4.</td>
+                    <td>右椿右鞭捶，連環逼步3橫踩加外勾腿</td>
+				</tr>
+                <tr>
+                    <td>F5.</td>
+                    <td>右椿右鞭捶，右彈腿，再左後蹬腿</td>
+				</tr>
+                <tr>
+					<td>F6.</td>
+                    <td>前插捶，左扲手，右崩捶加閉門腿，退步雙挑掌</td>
+                </tr>
+                <tr>
+                    <td>F7.</td>
+                    <td>右 Jab，左 cross，右低插捶，加扲手，再崩捶，左低掃，再右中掃腿</td>
+				</tr>
+                <tr>
+                    <td>F8.</td>
+                    <td>與 F7 相同但改為左扎脚，再右中掃腿</td>
+				</tr>
+                <tr>
+					<td>F9.</td>
+                    <td>前崩捶，前釘腿</td>
+                </tr>
+                <tr>
+					<td>F10.</td>
+                    <td>前崩捶，前高掃腿</td>
+                </tr>
+				<tr>
+					<td>F11.</td>
+                    <td>前崩捶，前釘腿，再高掃腿</td>
+                </tr>
+                <tr>
+                    <td>F12.</td>
+                    <td>Jab，後崩擋隔，同時釘腿，上步隔轉直擊 [12路潭腿第一路]</td>
+				</tr>
+                <tr>
+					<td>F13.</td>
+                    <td>F12 加上鸳鸯腿連環直拳 [12路潭腿第10路]</td>
+                </tr>
+                <tr>
+                    <td>F14.</td>
+                    <td>前崩捶 [或左右虛式] 加前當門腿</td>
+				</tr>
+			</table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <p style="text-align:right;">
+                <span style="font-size:12px;">更新版本: 2025.12.17</span>
+            </p>
+        </td>
+    </tr>
+
+			<tr>
+				<td colspan="4" style="background-color: #333;">
+					<table>
+						<td width=30% style="text-align: left;">
+							<button id="nextBtn"><a href="javascript:history.back()">返　回</a></button>
+						</td>
+						<td width=40%  style="text-align:center;">
+							<p style="text-align:center;">
+								<a href="../Fists-kicks/Index.html">
+									<button type="button" style="text-decoration:none; padding:8px 16px; background:#007BFF; color:#fff; border-radius:12px;">
+									<span style="font-size:18px;">拳腳</span></button>
+								</a>
+								<a href="../Weapons/Index.html">
+									<button type="button" style="text-decoration:none; padding:8px 16px; background:#FF007B; color:#fff; border-radius:12px;">
+									<span style="font-size:18px;">兵器</span></button>
+								</a>
+								<a href="../Wellness/Index.html">
+									<button type="button" style=" text-decoration:none; padding:8px 16px; background:#7BFF00; color:#fff; border-radius:12px;">
+									<span style="font-size:18px;">養生</span></button>
+								</a>
+							</p>
+						</td>
+						<td width=30%  style="text-align: right;">&nbsp;</td>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>
